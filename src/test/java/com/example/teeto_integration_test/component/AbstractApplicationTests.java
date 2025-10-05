@@ -1,8 +1,6 @@
 package com.example.teeto_integration_test.component;
 
 import com.example.teeto_integration_test.model.Post;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.tomakehurst.wiremock.WireMockServer;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;

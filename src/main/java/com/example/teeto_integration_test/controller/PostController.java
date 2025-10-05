@@ -19,9 +19,4 @@ public class PostController {
         return postService.getPosts();
     }
 
-    @GetMapping("/posts/{id}")
-    public Post getPosts(@PathVariable String postId) {
-        return postService.getPost(postId);
-    }
-
 }

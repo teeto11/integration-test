@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PostTest extends AbstractApplicationTests {
 
     @Test
-    void whenPostIsCalled_thenAListOfPostsIsReturned() {
+    void whenPostMethodIsCalled_thenAListOfPostsIsReturned() {
         //perform stubbing
         wireMockServer.givenThat(PostStubs.posts()
                 .willReturn(okJson(postResponse("testdata/postData.json"))
@@ -21,7 +21,7 @@ public class PostTest extends AbstractApplicationTests {
         //make rest call
         List<Post> post = postIsCalled();
 
-        //assert
+        //assertion
         assertEquals("delectus aut autem", post.get(0).title());
     }
 
